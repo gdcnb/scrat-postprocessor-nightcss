@@ -7,5 +7,15 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "chennanbei",
-  "license": "BSD-2-Clause"
+  "license": "BSD-2-Clause",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gdcnb/scrat-postprocessor-nightcss.git"
+  },
+  "keywords": [
+    "nightcss"
+  ],
+  "bugs": {
+    "url": "https://github.com/gdcnb/scrat-postprocessor-nightcss/issues"
+  }
 }
