@@ -1,7 +1,11 @@
 var colorTr = require('./lib/colorTr');
 
-module.exports = function(content, file) {
-    var result = colorTr.creatNightCss(content);
+module.exports = function(content, file, option) {
+    option = typeof option === 'object' ? option : {};
 
-    return result;
+    if(option.undoFiles && option.undoFiles[file.filename]) { //过滤不作处理的文件
+        return content;
+    }
+
+    return colorTr.creatNightCss(content);
 };
